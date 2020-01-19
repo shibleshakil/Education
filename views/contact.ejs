@@ -1,0 +1,140 @@
+<% include partials/header.ejs %>		
+		<!-- START  HOME DESIGN -->
+		<section class="section-top">
+			<div class="container">
+				<div class="col-md-6 col-sm-6 col-xs-12">
+					<div class="section-top-title">
+						<h2>Contact us</h2>
+					</div><!-- //.HERO-TEXT -->
+				</div><!--- END COL -->
+				<div class="col-md-6 col-sm-6 col-xs-12">
+					<ol class="breadcrumb">
+					  <li><a href="/">Home</a></li>
+					  <li class="active">Contact us</li>
+					</ol>
+				</div><!--- END COL -->
+			</div><!--- END CONTAINER -->
+		</section>	
+		<!-- END  HOME DESIGN -->	
+
+		<div id="map"></div>
+		
+		<!-- START CONTACT FORM AND MAP -->
+		<section class="footer_contact_area section-padding">
+			<div class="container-fluid">
+				<div class="row">	
+					<div class="section-title text-center wow zoomIn">
+						<h2>get in touch</h2>
+						<span></span>						
+					</div>									
+					<div class="col-md-8 col-md-offset-2 col-sm-12 col-xs-12">
+						<div class="footer_contact">
+							<form id="contact-form" method="post" enctype="multipart/form-data">
+								<div class="row">
+									<div class="form-group col-md-12">
+										<input type="text" name="name" class="form-control" id="first-name" placeholder="Name" required="required">
+									</div>
+									<div class="form-group col-md-12">
+										<input type="email" name="email" class="form-control" id="email" placeholder="Email" required="required">
+									</div>
+									<div class="form-group col-md-12">
+										<input type="text" name="text" class="form-control" id="subject" placeholder="Subject" required="required">
+									</div>
+									<div class="form-group col-md-12">
+										<textarea rows="6" name="message" class="form-control" id="description" placeholder="Your Message" required="required"></textarea>
+									</div>
+									<div class="col-md-12">
+										<div class="actions">
+											<input type="submit" value="Send message" name="submit" id="submitButton" class="btn  btn-contact-bg" title="Submit Your Message!" />
+										</div>
+									</div>
+								</div>
+							</form>
+						</div>
+					</div><!-- END COL -->						
+				</div><!--- END ROW -->				
+			</div><!--- END CONTAINER -->	
+		</section>
+		<!-- END CONTACT FORM  AND MAP -->
+
+		<!-- START CONTACT ADDRESS -->
+		<div class="contact-address section-padding">
+			<div class="container">
+				<div class="row text-center">
+					<div class="col-md-3 col-sm-6 col-xs-12">
+						<div class="single_address single_activites_color_one">
+							<i class="fa fa-phone"></i>
+							<p>(+1) 740-395-3829</p>
+							<p>(+1) 740-395-3829</p>
+						</div>
+					</div><!-- END COL  -->
+					<div class="col-md-3 col-sm-6 col-xs-12">
+						<div class="single_address single_activites_color_three">
+							<i class="fa fa-rocket"></i>
+							<p>3783 Columbia Mine Road Shinnston, WV 26431 </p>
+						</div>
+					</div><!-- END COL  -->
+					<div class="col-md-3 col-sm-6 col-xs-12">
+						<div class="single_address single_activites_color_two">
+							<i class="fa fa-envelope"></i>
+							<p>Info@bornomala.com</p>
+							<p>Info@bornomala.com</p>
+						</div>
+					</div><!-- END COL  -->
+					<div class="col-md-3 col-sm-6 col-xs-12">
+						<div class="single_address single_activites_color_four">
+							<i class="fa fa-clock-o"></i>
+							<p>Mon - Fri</p>
+							<p>08.00 - 6.00</p>
+						</div>
+					</div><!-- END COL  -->
+				</div><!--END  ROW  -->
+			</div><!-- END CONTAINER  -->
+		</div>
+		<!-- END CONTACT ADDRESS -->
+		
+		<% include partials/footer.ejs %>
+		 
+		<!-- Latest jQuery -->
+			<script src="assets/js/jquery-1.12.4.min.js"></script>
+		<!-- Latest compiled and minified Bootstrap -->
+			<script src="assets/bootstrap/js/bootstrap.min.js"></script>														
+		<!-- countTo js -->
+			<script src="assets/js/jquery.inview.min.js"></script>			
+		<!-- owl-carousel min js  -->
+			<script src="assets/owlcarousel/js/owl.carousel.min.js"></script>	
+		<!-- magnific-popup js -->               
+			<script src="assets/js/jquery.magnific-popup.min.js"></script>
+		<!-- jquery mixitup js -->   
+			<script src="assets/js/jquery.mixitup.min.js"></script>	
+		<!-- scrolltopcontrol js -->
+			<script src="assets/js/scrolltopcontrol.js"></script>										
+		<!-- WOW - Reveal Animations When You Scroll -->
+			<script src="assets/js/wow.min.js"></script>
+		<!-- form-contact js -->
+			<script src="assets/js/form-contact.js"></script>			
+		<!-- map js -->
+			<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDwIQh7LGryQdDDi-A603lR8NqiF3R_ycA"></script>				
+		<!-- scripts js -->
+			<script src="assets/js/scripts.js"></script>
+			<script type="text/javascript">
+				/*START GOOGLE MAP*/
+				function initialize() {
+				  var mapOptions = {
+					zoom: 15,
+					scrollwheel: false,
+					center: new google.maps.LatLng(40.7127837, -74.00594130000002)
+				  };
+				  var map = new google.maps.Map(document.getElementById('map'),
+					  mapOptions);
+				  var marker = new google.maps.Marker({
+					position: map.getCenter(),
+					icon: 'assets/img/map_pin.png',
+					map: map
+				  });
+				}
+				google.maps.event.addDomListener(window, 'load', initialize);	
+				/*END GOOGLE MAP*/	
+			</script>
+    </body>
+</html>

@@ -1,0 +1,177 @@
+<% include partials/header.ejs %>
+<section class="footer_contact_area section-padding">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="section-title text-center wow zoomIn">
+                <h2>Add Student</h2>
+                <span></span>
+            </div>
+            <div class="col-md-8 col-md-offset-2 col-sm-12 col-xs-12">
+                <div class="footer_contact">
+                    <form action="/add-student" method="post" enctype="multipart/form-data">
+                        <% include partials/messages.ejs %>
+                        <div class="row">
+                            <h3>Basic Info</h3>
+                            <div class="form-group col-md-12">
+                                <label for="name">Name:</label>
+                                <input type="text" name="name" class="form-control" id="name"
+                                    placeholder="eg... Md. Abdur Rahim" required="required">
+                            </div>
+                            <div class="form-group col-md-12">
+                                <label for="name">Phone:</label>
+                                <input type="text" name="phone" class="form-control" data-format="+1 (ddd) dddd-dddd"
+                                    placeholder="eg... +880 1700000000" required="required">
+                            </div>
+                            <div class="form-group col-md-12">
+                                <div class="input-group-prepend">
+                                    <label for="inputGroupSelect01">Gender:</label>
+                                </div>
+                                <select class="form-control" id="inputGroupSelect01" name="gender">
+                                    <option selected>Select</option>
+                                    <option value="Male">Male</option>
+                                    <option value="Female">Female</option>
+                                    <option value="Other">Other</option>
+                                </select>
+                            </div>
+                            <div class="form-group col-md-12">
+                                <label for="inputAddress">Address:</label>
+                                <input type="text" class="form-control" id="inputAddress" name="address"
+                                    placeholder="eg... road#1234 Main St, Gulsan, Dhaka-1212">
+                            </div>
+                            <div class="form-group col-md-12">
+                                <label for="inputImage">Image:</label>
+                                <input type="file" name="img" class="form-control" id="inputImage">
+                            </div>
+
+                            <h3>Educational Info</h3>
+                            <div class="form-group col-md-12">
+                                <div class="input-group-prepend">
+                                    <label for="inputGroupSelect01">Class:</label>
+                                </div>
+                                <select name="class" class="form-control" id="inputGroupSelect01">
+                                    <option selected>Select</option>
+                                    <option value="Three">Three</option>
+                                    <option value="Four">Four</option>
+                                    <option value="Five">Five</option>
+                                    <option value="Six">Six</option>
+                                    <option value="Seven">Seven</option>
+                                    <option value="Eight">Eight</option>
+                                    <option value="Nine">Nine</option>
+                                    <option value="Ten">Ten</option>
+                                    <option value="HSC 1st Year">HSC 1st Year</option>
+                                    <option value="HSC 2nd Year">HSC 2nd Year</option>
+                                </select>
+                            </div>
+                            <div class="form-group col-md-12">
+                                <label for="instituteName">Institute Name:</label>
+                                <input type="text" name="instituteName" class="form-control" id="instituteName"
+                                    placeholder="eg... Dhaka govt. High Scholl" required="required">
+                            </div>
+                            <div class="form-group col-md-12">
+                                <label for="CochingId">Coching ID:</label>
+                                <input type="text" name="CochingId" class="form-control" id="CochingId"
+                                    placeholder="eg... 5000" required="required">
+                            </div>
+                            <div class="form-group col-md-12">
+                                <label for="date">Addmission Date:</label>
+                                <input type="date" name="AddmissionDate" class="form-control" id="datepicker"
+                                    required="required">
+                            </div>
+                            <div class="form-group col-md-12">
+                                <label for="TutionFee">Monthly Tution Fee:</label>
+                                <input type="text" name="TutionFee" class="form-control" id="TutionFee"
+                                    placeholder="eg... 5000" required="required">
+                            </div>
+
+                            <h3>Guardian Info</h3>
+
+                            <div class="form-group col-md-12">
+                                <label for="name">Name:</label>
+                                <input type="text" name="GuardianName" class="form-control" id="name"
+                                    placeholder="eg... Md. Abdur Rahim" required="required">
+                            </div>
+                            <div class="form-group col-md-12">
+                                <label for="phone">Phone:</label>
+                                <input type="text" name="GuardianPhone" class="form-control"
+                                    data-format="+1 (ddd) dddd-dddd" placeholder="eg... +880 1700000000"
+                                    required="required">
+                            </div>
+
+                            <div class="form-group col-md-12">
+                                <label for="inputRelation">Relation:</label>
+                                <input type="text" name="Relation" class="form-control" id="inputRelation"
+                                    placeholder="eg... Father">
+                            </div>
+                            <div class="form-group col-md-12">
+                                <label for="inputAddress">Address:</label>
+                                <input type="text" name="GuardianAddress" class="form-control" id="inputAddress"
+                                    placeholder="eg... road#1234 Main St, Gulsan, Dhaka-1212">
+                            </div>
+                            <div class="form-group col-md-12">
+                                <label for="occupation">Occupation:</label>
+                                <input type="text" name="Occupation" class="form-control" id="occupation"
+                                    placeholder="eg... service" required="required">
+                            </div>
+                            <div class="col-md-12">
+                                <div class="actions">
+                                    <input type="submit" value="Add Student" name="submit" id="submitButton"
+                                        class="btn  btn-contact-bg" title="Submit Student's Information!" />
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div><!-- END COL -->
+        </div>
+        <!--- END ROW -->
+    </div>
+    <!--- END CONTAINER -->
+</section>
+
+
+<% include partials/footer.ejs %>
+
+<!-- Latest jQuery -->
+<script src="assets/js/jquery-1.12.4.min.js"></script>
+<!-- Latest compiled and minified Bootstrap -->
+<script src="assets/bootstrap/js/bootstrap.min.js"></script>
+<!-- countTo js -->
+<script src="assets/js/jquery.inview.min.js"></script>
+<!-- owl-carousel min js  -->
+<script src="assets/owlcarousel/js/owl.carousel.min.js"></script>
+<!-- magnific-popup js -->
+<script src="assets/js/jquery.magnific-popup.min.js"></script>
+<!-- jquery mixitup js -->
+<script src="assets/js/jquery.mixitup.min.js"></script>
+<!-- scrolltopcontrol js -->
+<script src="assets/js/scrolltopcontrol.js"></script>
+<!-- WOW - Reveal Animations When You Scroll -->
+<script src="assets/js/wow.min.js"></script>
+<!-- form-contact js -->
+<script src="assets/js/form-contact.js"></script>
+<!-- map js -->
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDwIQh7LGryQdDDi-A603lR8NqiF3R_ycA"></script>
+<!-- scripts js -->
+<script src="assets/js/scripts.js"></script>
+<script type="text/javascript">
+    /*START GOOGLE MAP*/
+    function initialize() {
+        var mapOptions = {
+            zoom: 15,
+            scrollwheel: false,
+            center: new google.maps.LatLng(40.7127837, -74.00594130000002)
+        };
+        var map = new google.maps.Map(document.getElementById('map'),
+            mapOptions);
+        var marker = new google.maps.Marker({
+            position: map.getCenter(),
+            icon: 'assets/img/map_pin.png',
+            map: map
+        });
+    }
+    google.maps.event.addDomListener(window, 'load', initialize);
+        /*END GOOGLE MAP*/
+</script>
+</body>
+
+</html>

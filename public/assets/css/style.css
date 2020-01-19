@@ -1,0 +1,1502 @@
+/*
+Author       : Theme_Ocean.
+Template Name: Bornomala - Kindergarten & School HTML Template
+Version      : 1.0
+*/
+/*=============================================================
+    CSS INDEX
+    =============================
+    01. GENERAL STYLE (body, link color, section-title, preloader btn, overlay, section-padding etc)
+    02. START HEADER TOP DESIGN
+    03. START HOME DESIGN
+    04. START BOOTSTRAP NAVIGATION OVERRIDES
+    05. START ABOUT US DESIGN
+    06. START DEPARTMENT DESIGN
+    07. START RESERVATION DESIGN
+    08. START OUR TEAM DESIGN
+    09. START PORTFOLIO DESIGN
+    10. START TESTIMONIAL DESIGN
+    11. START COUNT DOWN DESIGN
+    12. START PRICING DESIGN
+    13. START HOW IT WORKS DESIGN
+    14. START BLOG DESIGN
+    15. START CONTACT FORM AND MAP
+    16. START FOOTER TOP DESIGN
+    17. START FOOTER DESIGN
+  =============================================================*/
+/*
+* ----------------------------------------------------------------------------------------
+* 01.GENERAL STYLE
+* ----------------------------------------------------------------------------------------
+*/
+body {
+	color: #666666;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 21px;
+	height: 100%;
+	font-family:"Open Sans",sans-serif;
+	background: #fff;
+}
+html,
+body { height: 100% }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  letter-spacing: 0px;
+  margin-top: 0px;
+ font-family: "Dosis", sans-serif;
+  color: #202020;
+  font-weight: 400;
+}
+a {
+	font-family: "Dosis", sans-serif;
+    text-decoration: none;
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s;
+}
+a:hover {
+    color: #fff;
+    text-decoration: none;
+}
+a:focus {
+    outline: none;
+    text-decoration: none;
+}
+
+p {
+  margin-bottom: 0;
+}
+ul,
+li {
+    margin: 0;
+    padding: 0;
+}
+fieldset {
+    border: 0 none;
+    margin: 0 auto;
+    padding: 0;
+}
+/*START PRELOADER DESIGN*/
+.preloader {
+    background: #fff;
+    bottom: 0;
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 99999;
+}
+
+.status-mes {
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -40px 0 0 -40px;
+    font-size: 10px;
+    text-indent: -12345px;
+    border-top: 5px solid rgba(0, 0, 0, 0.08);
+    border-right: 5px solid rgba(0, 0, 0, 0.08);
+    border-bottom: 5px solid rgba(0, 0, 0, 0.08);
+    border-left: 5px solid #ef476f;
+    border-radius: 50%;
+    -webkit-animation: spinner 700ms infinite linear;
+    animation: spinner 700ms infinite linear;
+    z-index: 10000;
+}
+
+@-webkit-keyframes spinner {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes spinner {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+.no-padding { padding: 0 }
+/*END PRELOADER DESIGN*/
+.section-padding { padding: 60px 0 }
+/*START SECTION TITLE DESIGN*/
+.section-title { margin-bottom: 60px }
+.section-title  h2 {
+font-weight: 500;
+letter-spacing: 2px;
+margin: 0;
+text-transform: capitalize;
+position:relative;
+}
+.section-title span {
+background: #ef476f none repeat scroll 0 0;
+display: block;
+height: 2px;
+margin: 20px auto;
+overflow: hidden;
+position: relative;
+width: 50px;
+}
+.section-title-white{color:#fff;}
+.section-title p {
+  margin: auto;
+  padding: 0 10px;
+  width: 70%;
+}
+/*END SECTION TITLE DESIGN*/
+/*START SCROLL TO TOP*/
+.topcontrol {
+background: #ef476f none repeat scroll 0 0;
+border-radius: 5px;
+bottom: 5px;
+box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.2);
+color: #fff;
+cursor: pointer;
+font-size: 22px;
+height: 35px;
+line-height: 33px;
+opacity: 1;
+position: fixed;
+right: 5px;
+text-align: center;
+transition: all 0.2s ease 0s;
+width: 35px;
+}
+.topcontrol:hover {
+    background: #222;
+    color: #fff;
+}
+/*END SCROLL TO TOP*/
+.btn-light-bg{
+background: #e0e0e0 none repeat scroll 0 0;
+border-radius: 0;
+color: #202020;
+font-size: 12px;
+letter-spacing: 2px;
+outline: medium none !important;
+padding: 15px 27px;
+text-transform: uppercase;
+transition: all 0.2s ease 0s;
+}
+.btn-light-bg:hover, .btn-light-bg:focus{
+background: #ef476f none repeat scroll 0 0;
+color:#fff;
+}
+/*
+* ----------------------------------------------------------------------------------------
+* 01.END GENERAL STYLE
+* ----------------------------------------------------------------------------------------
+*/
+.color_one{background:#26547c;height:4px;}
+.color_two{background:#ef476f;height:4px;}
+.color_three{background:#06ca75;height:4px;}
+.color_four{background:#00d8ff;height:4px;}
+.color_five{background:#05f3b3;height:4px;}
+.color_six{background:#9600ff;height:4px;}
+
+/*
+* ----------------------------------------------------------------------------------------
+* 02.START HEADER TOP DESIGN
+* ----------------------------------------------------------------------------------------
+*/
+.header_area {
+background: #2f3c43 none repeat scroll 0 0;
+left: 0;
+margin-top: 4px;
+padding: 8px 0;
+position: absolute;
+top: 0;
+width: 100%;
+z-index: 999;
+}
+.top-info-left  ul{list-style: outside none none;}
+.top-info-left  ul li{
+display: inline-block;
+margin-right: 20px;
+color:rgba(255, 255, 255, 0.8);
+}
+.top-info-left  ul li a{
+color: rgba(255, 255, 255, 0.8);
+font-size: 17px;
+}
+.top-info-left  ul li i{
+background: #ef476f none repeat scroll 0 0;
+border-radius: 30px;
+color: #fff;
+font-size: 14px;
+height: 30px;
+line-height: 30px;
+margin-right: 5px;
+text-align: center;
+width: 30px;
+}
+.top-info-right ul { float: right }
+.top-info-right li{
+color: rgba(255, 255, 255, 0.8);
+display: inline-block;
+}
+.top-info-right li a {
+	text-align: center;
+	font-size: 16px;
+	margin: 2px;
+	color:rgba(255, 255, 255, 0.8);
+    -webkit-transition: all 0.36s ease-out;
+            transition: all 0.36s ease-out;
+}
+.top-info-right li a i:hover {
+color:#fff;
+}
+/*
+* ----------------------------------------------------------------------------------------
+* 02.END HEADER TOP DESIGN
+* ----------------------------------------------------------------------------------------
+*/
+/*
+* ----------------------------------------------------------------------------------------
+* 03.START BOOTSTRAP NAVIGATION OVERRIDES
+* ----------------------------------------------------------------------------------------
+*/
+.navbar-default {
+background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+border: medium none;
+border-radius: 0;
+margin-bottom: 0;
+padding: 10px 0;
+transition: all 0.4s ease-in-out 0s;
+width: 100%;
+}
+.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>.active>a:hover,
+.navbar-default .navbar-nav>.active>a:focus {
+    color: #ef476f !important;
+    background-color: transparent;
+}
+.navbar-default .navbar-nav>.open>a,
+.navbar-default .navbar-nav>.open>a:hover,
+.navbar-default .navbar-nav>.open>a:focus {
+    color: #171717 !important;
+    background-color: transparent;
+}
+.navbar-brand { padding: 0px }
+.navbar-brand img {
+    width: 150px;
+    margin-left: 10px;
+	transition: all 0.3s ease 0s;
+}
+.navbar-default.menu-shrink .navbar-brand img {
+    width: 150px;
+}
+.navbar-default .navbar-collapse,
+.navbar-default .navbar-form { border-color: #fff }
+.menu-top {
+background: #fff none repeat scroll 0 0;
+margin-top: 40px;
+}
+.menu-top li a {
+color: #333 !important;
+font-family: "Dosis",sans-serif;
+font-size: 16px;
+font-weight: 600;
+letter-spacing: 1px;
+text-transform: capitalize;
+}
+.menu-top li a:hover { color: #ef476f!important }
+.navbar-default.menu-shrink {
+background:#fff;
+padding: 10px 0;
+width: 100%;
+ margin-top:0px
+}
+/*START DROPDOWN MENU*/
+.menu_dropdown  ul { list-style-type: none }
+.menu_dropdown  li ul.sub-menu,
+.menu_dropdown  ul li ul.sub-menu li ul.sub-menu {
+    background: #fff;
+    left: 10px;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    padding: 15px;
+    position: absolute;
+    top: 115%;
+    -webkit-transition: all 0.3s ease 0s;
+            transition: all 0.3s ease 0s;
+    visibility: hidden;
+    width: 180px;
+    z-index: -99;
+}
+.menu_dropdown  ul li ul.sub-menu li ul.sub-menu {
+    top: 0;
+    left: 100%;
+    -webkit-transition: all 0.5s ease 0s;
+            transition: all 0.5s ease 0s;
+}
+.menu_dropdown  ul li ul.sub-menu li {
+    padding: 0;
+    width: 100%;
+}
+.menu_dropdown  ul li:hover ul.sub-menu {
+    top: 100%;
+    opacity: 1;
+    filter: alpha(opacity=100);
+    z-index: 999;
+    visibility: visible;
+}
+.menu_dropdown  ul.nav > li ul li:hover ul.sub-menu {
+    opacity: 1;
+    filter: alpha(opacity=100);
+    visibility: visible;
+}
+.menu_dropdown  ul li ul.sub-menu li a {
+color: #333 !important;
+font-family: "Dosis",sans-serif;
+font-size: 16px;
+font-weight: 600;
+letter-spacing: 1px;
+text-transform: capitalize;
+}
+.menu_dropdown  ul li ul.sub-menu li:last-child a{border-bottom:none;}
+.menu_dropdown  ul li:hover ul.sub-menu li a:hover {
+    color: #ef476f!important;
+    text-decoration: none;
+}
+/*END DROPDOWN MENU*/
+.navbar-default.menu-shrink li a {color:#333 !important; }
+.navbar-default.menu-shrink li a:hover { color: #ef476f !important }
+.navbar-default .navbar-toggle { background: #fff none repeat scroll 0 0 }
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus { background-color: #fff }
+.navbar-default .navbar-toggle .icon-bar { background-color: #ef476f }
+/*
+* ----------------------------------------------------------------------------------------
+* 03.END BOOTSTRAP NAVIGATION OVERRIDES
+* ----------------------------------------------------------------------------------------
+*/
+/*
+* ----------------------------------------------------------------------------------------
+* 03.START HOME DESIGN
+* ----------------------------------------------------------------------------------------
+*/
+.home_bg {
+    height: 700px;
+    position: relative;
+}
+.home_bg:before {
+    background: rgba(0, 0, 0, 0.6);
+    content: "";
+    height: 100%;
+    filter: alpha(opacity=80);
+    position: absolute;
+    width: 100%;
+}
+.hero-text h2 {
+color: #fff;
+font-size: 54px;
+font-weight: 600;
+letter-spacing: 2px;
+line-height: 70px;
+padding-top: 250px;
+text-transform: capitalize;
+}
+.hero-text p {
+color: #fff;
+font-size: 20px;
+text-transform: capitalize;
+}
+.home_btn{
+margin-top: 30px;
+}
+.home_btn a {
+background: transparent none repeat scroll 0 0;
+border: 2px solid #fff;
+border-radius: 2px;
+display: inline-block;
+font-family: "Dosis",sans-serif;
+font-size: 12px;
+font-weight: 500;
+letter-spacing: 2px;
+margin: 0 10px 15px;
+padding: 9px 30px;
+text-transform: uppercase;
+transition: all 0.3s ease 0s;
+}
+.home_btn a:hover{
+background: transparent none repeat scroll 0 0!important;
+border: 2px solid #fff!important;
+color:#fff!important;
+}
+.home_btn_color_one{background: #fff none repeat scroll 0 0 !important;color: #333;}
+.home_btn_color_two{background: #ef476f none repeat scroll 0 0 !important;border: 2px solid #ef476f !important;color: #fff;}
+
+.welcome-area,
+.welcome-slider-area,
+.welcome-slider-area div { height: 700px }
+.welcome-slider-area div.single-slide-item-tablecell,
+.welcome-slider-area div.single-slide-item-tablecell div { height: auto }
+.single-slide-item-table {
+    display: table;
+    text-align: center;
+    width: 100%;
+}
+.single-slide-item-tablecell {
+    display: table-cell;
+    vertical-align: middle;
+}
+.single-slide-item {
+    position: relative;
+    z-index: 1;
+}
+.single-slide-item:after {
+    position: absolute;
+    background: rgba(0,0,0,0.6);
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    content: "";
+    z-index: -1;
+}
+.slide-1 {
+    background: url(../img/bg/slide1.jpg) scroll 0 0;
+    background-size: cover;
+}
+.slide-2 {
+    background: url(../img/bg/slide2.jpg) scroll 0 0;
+    background-size: cover;
+}
+.slide-3 {
+    background: url(../img/bg/slide3.jpg) scroll 0 0;
+    background-size: cover;
+}
+.carousel-fade .carousel-inner .item {
+    -webkit-transition-property: opacity;
+    transition-property: opacity;
+}
+.carousel-fade .carousel-inner .item,
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
+}
+.carousel-fade .carousel-inner .active,
+.carousel-fade .carousel-inner .next.left,
+.carousel-fade .carousel-inner .prev.right {
+    opacity: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    filter: alpha(opacity=100);
+}
+.carousel-fade .carousel-inner .next,
+.carousel-fade .carousel-inner .prev,
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+    left: 0;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+.single-slide-item h2 {
+color: #fff;
+font-size: 60px;
+font-weight: 600;
+letter-spacing: 2px;
+line-height: 70px;
+text-transform: capitalize;
+}
+.single-slide-item p {
+color: #fff;
+font-size: 20px;
+text-transform: capitalize;
+}
+.carousel-indicators-slider { bottom: 30px !important }
+/*
+* ----------------------------------------------------------------------------------------
+* 03.END HOME DESIGN
+* ----------------------------------------------------------------------------------------
+*/
+
+.promotion{background:#ef476f;}
+.single_promo{}
+.single_promo h1{
+color: #fff;
+font-size: 54px;
+letter-spacing: 1px;
+margin-bottom: 0;
+text-transform: capitalize;
+}
+/*
+* ----------------------------------------------------------------------------------------
+* 0.START ABOUT DESIGN
+* ----------------------------------------------------------------------------------------
+*/
+.about_content h1{
+font-weight: 600;
+letter-spacing: 1px;
+line-height: 48px;
+margin-bottom: 15px;
+}
+.about_content p{}
+
+.mbtop{margin-top: 20px;}
+.about-slide iframe {
+  width: 100%;
+  height: 380px;
+  border: none;
+}
+/*
+* ----------------------------------------------------------------------------------------
+* 0.END ABOUT DESIGN
+* ----------------------------------------------------------------------------------------
+*/
+/*
+* ----------------------------------------------------------------------------------------
+* 0.START OUR ACTIVITES DESIGN
+* ----------------------------------------------------------------------------------------
+*/
+.our_activites {
+    padding-top: 60px;
+    padding-bottom: 30px;
+}
+.single_activites {
+    background: #fff none repeat scroll 0 0;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    padding: 70px 30px;
+    -webkit-transition: all 0.2s ease 0s;
+            transition: all 0.2s ease 0s;
+}
+.single_activites_color_one{background:#26547c;}
+.single_activites_color_two{background:#ef476f;}
+.single_activites_color_three{background:#06ca75;}
+.single_activites_color_four{background:#00d8ff;}
+.single_activites_color_five{background:#05f3b3;}
+.single_activites_color_six{background:#9600ff;}
+.single_activites:hover {
+    box-shadow: 0 1px 45px 0 rgba(0, 0, 0, 0.1);
+}
+
+.single_activites i {
+    font-size: 40px;
+    padding-bottom: 20px;
+    color: #fff;
+    -webkit-transition: all 0.2s ease 0s;
+            transition: all 0.2s ease 0s;
+}
+.single_activites:hover i { color: #fff }
+.single_activites h4 {
+color: #fff;
+font-weight: 600;
+margin: 0;
+padding-bottom: 20px;
+text-transform: capitalize;
+transition: all 0.2s ease 0s;
+}
+.single_activites p {
+    margin-bottom: 0;
+	color:#fff;
+    -webkit-transition: all 0.2s ease 0s;
+            transition: all 0.2s ease 0s;
+}
+/*
+* ----------------------------------------------------------------------------------------
+* 0.END OUR ACTIVITES DESIGN
+* ----------------------------------------------------------------------------------------
+*/
+
+/*
+* ----------------------------------------------------------------------------------------
+* 0.START PORTFOLIO DESIGN
+* ----------------------------------------------------------------------------------------
+*/
+.template_portfolio_pt{padding-top:60px;padding-bottom:30px;}
+.portfolios { overflow: hidden }
+.portfolio-filters { margin-bottom: 40px }
+.portfolio-filters li.active {color: #ef476f;}
+.portfolio-filters li:hover.active {color: #ef476f; }
+.portfolio-filters li {
+color: #333;
+cursor: pointer;
+display: inline-block;
+font-size: 16px;
+margin-right: 5px;
+padding: 0 20px;
+text-transform: capitalize;
+transition: all 0.4s ease 0s;
+}
+.portfolio-filters li:hover { color: #ef476f;}
+.grid .mix {
+    display: none;
+    opacity: 0;
+    filter: alpha(opacity=0);
+}
+.image-wrapper { position: relative;margin-bottom:30px; }
+.image-wrapper img {
+    width: 100% !important;
+    height: auto;
+}
+.image-overlay {
+    background:rgba(239,71,111,0.7);
+    position: absolute;
+    text-align: center;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    -webkit-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+.image-overlay span a {
+color: #fff;
+font-size: 20px;
+font-weight: 600;
+left: 33%;
+position: absolute;
+text-transform: uppercase;
+top: 48%;
+}
+.image-wrapper:hover .image-overlay {
+    opacity: 1;
+    filter: alpha(opacity=100);
+}
+.portfolio_btn {
+margin: 0;
+padding-top: 30px;}
+.portfolio_btn a { border: medium none }
+/*
+* ----------------------------------------------------------------------------------------
+* 0.END PORTFOLIO DESIGN
+* ----------------------------------------------------------------------------------------
+*/
+
+
+/*
+* ----------------------------------------------------------------------------------------
+* 0.START COUNT DOWN DESIGN
+* ----------------------------------------------------------------------------------------
+*/
+.counter_feature {
+    position: relative;
+}
+.counter_feature:before {
+    background: rgba(0, 0, 0, 0.8) none repeat scroll 0 0;
+    content: "";
+    height: 100%;
+    opacity: 0.8;
+    filter: alpha(opacity=80);
+    position: absolute;
+    width: 100%;
+    top: 0;
+}
+.single_counter{
+background: rgba(255, 255, 255, 0.2) none repeat scroll 0 0;
+border-radius: 500px;
+display: inline-block;
+height: 200px;
+margin-bottom: 10px;
+position: relative;
+width: 200px;
+}
+.counter h2 {
+background: rgba(255, 255, 255, 0.3) none repeat scroll 0 0;
+border-radius: 500px;
+color: #fff;
+font-size: 36px;
+font-weight: 700;
+height: 120px;
+left: 50%;
+line-height: 120px;
+margin: auto;
+position: absolute;
+top: 50%;
+transform: translate(-50%, -50%);
+width: 120px;
+}
+.counter p {
+color: #fff;
+font-family: montserrat,sans-serif;
+text-transform: uppercase;
+}
+/*
+* ----------------------------------------------------------------------------------------
+* 0.END COUNT DOWN DESIGN
+* ----------------------------------------------------------------------------------------
+*/
+/*
+* ----------------------------------------------------------------------------------------
+* 0.START TEAM DESIGN
+* ----------------------------------------------------------------------------------------
+*/
+.template_team{padding-top:60px;padding-bottom:30px}
+.single_team {
+	position: relative;
+	overflow: hidden;
+	margin-bottom:30px;
+}
+.team-hover {
+	position: absolute;
+	width: 100%;
+	bottom: -100%;
+	padding: 30px;
+	padding-bottom: 0px;
+	background: #ef476f;
+	transition: all 0.3s ease-in-out;
+}
+.single_team:hover .team-hover {
+	bottom: 0px;
+}
+.team .position-center-center {
+	width: 100%;
+	padding: 0 20px;
+}
+.single_team img{width: 100%;}
+.single_team h5 {
+color: #fff;
+font-size: 18px;
+margin: 0;
+text-transform: uppercase;
+font-weight: 600;
+letter-spacing: 2px;
+}
+.single_team span {
+color: #fff;
+display: inline-block;
+font-size: 14px;
+font-weight: 600;
+margin: 10px 0 0;
+text-align: center;
+text-transform: uppercase;
+width: 100%;
+}
+.single_team p{color: #fff;} 
+.social {
+    text-align: center;
+    display: inline-block;
+    margin-bottom: 25px;
+    margin-top: 15px;
+}
+.social li {
+    display: inline-block;
+    padding: 0;
+}
+.social li a {
+background: #fff none repeat scroll 0 0;
+border-radius: 30px;
+color: #333;
+display: inline-block;
+font-size: 18px;
+height: 45px;
+line-height: 45px;
+text-align: center;
+text-transform: uppercase;
+transition: all 0.2s ease 0s;
+width: 45px;
+margin: 0px 2px;
+}
+.social li a:hover {
+	color: #ef476f;
+}
+.team-name {
+background:#ef476f;
+bottom: 0;
+color: #fff;
+font-size: 16px;
+font-weight: 600;
+left: 0;
+letter-spacing: 2px;
+margin: 0;
+padding: 25px 20px;
+position: absolute;
+text-transform: uppercase;
+transition: all 0.2s ease-in-out 0s;
+width: 100%;
+}
+.owl-nav {
+  left: 0;
+  margin-top: -15px;
+  position: absolute;
+  top: 50%;
+  width: 100%;
+}
+.owl-nav > div {
+  font-size: 30px;
+  position: absolute;
+}
+/*
+* ----------------------------------------------------------------------------------------
+* 0.END TEAM DESIGN
+* ----------------------------------------------------------------------------------------
+*/
+
+/*
+* ----------------------------------------------------------------------------------------
+* 0.START EVENT DESIGN
+* ----------------------------------------------------------------------------------------
+*/
+.single_event img{width:560px;}
+.event-photo {
+    position: absolute;
+    top: 0;
+}
+.single_event_text {
+background: #ef476f none repeat scroll 0 0;
+margin: 35% auto auto;
+opacity: 0.9;
+-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=90)";
+padding: 30px;
+position: relative;
+text-align: center;
+width: 90%;
+z-index: 1;
+}
+.single_event_text i { color: #ef476f }
+.single_event_text span {
+background: #fff none repeat scroll 0 0;
+border-radius: 30px;
+color: #ef476f;
+display: inline-block;
+font-weight: 700;
+overflow: hidden;
+padding: 10px 30px;
+text-transform: uppercase;
+}
+.single_event_text p > span{
+background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+color: #fff;
+letter-spacing: 0;
+overflow: hidden;
+padding: 0 10px;
+}
+.single_event_text h4 a{
+color: #fff;
+display: block;
+font-size: 20px;
+font-weight: 600;
+margin: 10px 0;
+text-transform: capitalize;
+}
+.single_event_text p {color: #fff; }
+.single_event_text p a {color: #fff; }
+.our_event_mbtop{padding-top:60px;}
+.single_event_mb60{margin-bottom:60px;}
+/*
+* ----------------------------------------------------------------------------------------
+* 0.END EVENT DESIGN
+* ----------------------------------------------------------------------------------------
+*/
+/*
+* ----------------------------------------------------------------------------------------
+* .START PRICING DESIGN
+* ----------------------------------------------------------------------------------------
+*/
+.pricing_table{ background: #f1f1f1 }
+.pricing-tables { background: #fff }
+.pricing-tables .plan.recommended .head { margin-bottom: 20px }
+.plan {
+    background: #fff none repeat scroll 0 0;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+    min-height: 100px;
+    padding-bottom: 25px;
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
+}
+.head_color_one{background: #26547c none repeat scroll 0 0;}
+.head_color_two{background: #ef476f none repeat scroll 0 0;}
+.head_color_three{background: #00d8ff none repeat scroll 0 0;}
+.plan .head {
+padding: 15px 0;
+text-transform: uppercase;
+}
+.plan .head h1,
+.plan .head h2,
+.plan .head h3 {
+    padding: 0;
+    margin: 0;
+    color:#fff;
+}
+.plan .price {padding-top: 10px; }
+.plan .price h3 {
+    font-size: 82px;
+    line-height: 1;
+    vertical-align: top;
+    color: #333;
+}
+.plan .price h3 span {
+    font-size: 38px;
+    vertical-align: top;
+    position: relative;
+    margin: 6px 0 0 -7px;
+    display: inline-block;
+}
+.plan .price h4 {
+color: #aaa;
+font-size: 24px;
+margin-bottom: 0;
+text-transform: capitalize;
+}
+.plan ul {
+    list-style-type: none;
+    padding: 20px;
+}
+.plan ul li {
+    border: 1px solid #ddd;
+    color: #333;
+    font-size: 18px;
+    font-weight: 300;
+    margin-top: -1px;
+    padding: 10px 15px;
+    text-transform: capitalize;
+}
+.plan ul li a {
+    text-decoration: underline;
+    color: #e6e9ed;
+}
+.plan.recommended {
+    box-shadow: 0 0 22px rgba(10, 10, 10, 0.42);
+    position: relative;
+    z-index: 99;
+}
+.plan.recommended .btn { margin-bottom: 10px }
+/*
+* ----------------------------------------------------------------------------------------
+* .END PRICING DESIGN
+* ----------------------------------------------------------------------------------------
+*/
+
+/*
+* ----------------------------------------------------------------------------------------
+* .START TESTIMONIAL DESIGN
+* ----------------------------------------------------------------------------------------
+*/
+.testimonial {
+    position: relative;
+}
+.testimonial:before {
+    background: rgba(0, 0, 0, 0.8) none repeat scroll 0 0;
+    content: "";
+    height: 100%;
+    opacity: 0.8;
+    filter: alpha(opacity=80);
+    position: absolute;
+    width: 100%;
+    top: 0;
+}
+.testimonial_title{
+font-weight: 500;
+letter-spacing: 2px;
+margin: 0;
+text-transform: capitalize;
+position:relative;
+color:#fff;
+margin-bottom:30px;
+}
+.testimonial-text p {
+color: #fff;
+font-size: 18px;
+line-height: 26px;
+margin-bottom: 20px;
+}
+.testimonial-text h4 {
+color:#fff;
+font-weight: 500;
+margin-bottom: 0px;
+margin-top: 10px;
+text-transform: uppercase;
+}
+.carousel-indicators li {
+border: 1px solid #fff;
+border-radius: 30px;
+height: 12px;
+margin: 0 1px;
+width: 12px;
+}
+.carousel-indicators .active {
+  background-color: #fff;
+  height: 12px;
+  margin: 0 1px ;
+  width: 12px;
+}
+.site-wrapper { margin-bottom: 65px }
+#team__carousel { margin-bottom: 70px }
+#team__carousel .carousel-indicators { bottom: -80px }
+.carousel-control { display: none }
+
+/*
+* ----------------------------------------------------------------------------------------
+* .END TESTIMONIAL DESIGN
+* ----------------------------------------------------------------------------------------
+*/ 
+
+/*
+* ----------------------------------------------------------------------------------------
+* .START BLOG DESIGN
+* ----------------------------------------------------------------------------------------
+*/
+.single-blog {
+    background: #fff none repeat scroll 0 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    -webkit-transition: all 0.2s ease 0s;
+            transition: all 0.2s ease 0s;
+}
+.single-blog:hover { box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25) }
+.single-img {
+border: 4px solid #eee;
+position: relative;
+width: 100%;
+}
+.post-date {
+    background: #fff none repeat scroll 0 0;
+    display: inline-block;
+    left: 0;
+    padding: 15px;
+    position: absolute;
+    top: 5%;
+}
+.post-date  h4 strong{color:#ef476f;}
+.post-date  h4 {
+color: #333;
+line-height: 24px;
+margin: 0;
+text-align: center;
+text-transform: uppercase;
+}
+.blog-social {
+    background: #fff none repeat scroll 0 0;
+    bottom: 5%;
+    display: inline-block;
+    padding: 20px;
+    position: absolute;
+    left: 0;
+}
+.blog-social h4 {
+    border-bottom: 1px solid #e8e8e9;
+    margin-top: 0;
+    padding: 5px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.single_blog_dsc { padding: 20px }
+.single_blog_dsc h3 {
+    color: #333;
+    display: block;
+    font-size: 20px;
+    margin: 0;
+    padding-bottom: 15px;
+    text-transform: uppercase;
+    -webkit-transition: all 0.4s ease 0s;
+            transition: all 0.4s ease 0s;
+}
+.single_blog_dsc h3 a:hover { color: #ffaf00 }
+.single_blog_dsc p {
+    margin-bottom: 10px;
+}
+.single_blog_dsc a {
+    color: #ffaf00;
+    font-weight: 400;
+    -webkit-transition: all 0.4s ease 0s;
+            transition: all 0.4s ease 0s;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+.single_blog_dsc a:hover { padding-left: 10px }
+.view_more { margin-top: 50px }
+/*
+* ----------------------------------------------------------------------------------------
+* .END BLOG DESIGN
+* ----------------------------------------------------------------------------------------
+*/
+
+/*
+* ----------------------------------------------------------------------------------------
+* .START CONTACT ADDRESS
+* ----------------------------------------------------------------------------------------
+*/
+.contact-address {
+    background: #f1f1f1;
+}
+.single_address {
+border-radius: 5px;
+box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+padding: 40px 20px;
+}
+.single_address i {
+    color: #fff;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+.single_address p {color: #fff; }
+/*
+* ----------------------------------------------------------------------------------------
+* .END CONTACT ADDRESS
+* ----------------------------------------------------------------------------------------
+*/
+
+
+
+/*
+* ----------------------------------------------------------------------------------------
+* .START CONTACT FORM AND MAP
+* ----------------------------------------------------------------------------------------
+*/
+
+#map { height: 400px }
+.footer_contact input {
+    background: #f7f7f7 none repeat scroll 0 0;
+    border: 1px solid #eee;
+    border-radius: 4px;
+    box-shadow: none;
+    color: #333;
+    height: 52px;
+    padding: 10px;
+}
+.footer_contact textarea {
+    background: #f7f7f7 none repeat scroll 0 0;
+    border: 1px solid #eee;
+    border-radius: 4px;
+    box-shadow: none;
+    color: #333;
+    padding: 10px;
+}
+.footer_contact input:hover,
+.footer_contact input:focus {
+    border: 1px solid #ef476f;
+    box-shadow: none;
+    outline: 0 none;
+}
+.footer_contact textarea:hover,
+.footer_contact textarea:focus {
+    border: 1px solid #ef476f;
+    box-shadow: none;
+    outline: 0 none;
+}
+.btn-contact-bg{
+background: #e0e0e0 none repeat scroll 0 0;
+border-radius: 0;
+color: #202020;
+padding: 10px 30px !important;
+}
+.btn-contact-bg:hover, .btn-contact-bg:focus{
+background: #ef476f none repeat scroll 0 0;
+    border: 1px solid #ef476f;
+	color: #fff;
+}
+/*
+* ----------------------------------------------------------------------------------------
+* .END CONTACT FORM AND MAP
+* ----------------------------------------------------------------------------------------
+*/
+
+/*
+* ----------------------------------------------------------------------------------------
+* 17.START FOOTER TOP DESIGN
+* ----------------------------------------------------------------------------------------
+*/
+.footer-top{background: #26547c  ;}
+.single_footer{}
+
+.single_footer h4{
+color: #fff;
+font-size: 22px;
+margin: 0 0 25px;
+text-transform: capitalize;
+}
+.footer_contact p {
+  color: rgba(255, 255, 255, 0.9);
+}
+.single_footer p {
+  color: rgba(255, 255, 255, 0.9);
+  margin-bottom:10px;
+}
+.single_footer ul{list-style:none;}
+.single_footer ul li{}
+.single_footer ul li a{
+color: rgba(255, 255, 255, 0.9);
+font-size: 16px;
+font-weight: 500;
+line-height: 30px;
+text-transform: capitalize;
+transition: all 0.2s ease 0s;
+}
+.single_footer ul li a:hover{color:#fff;}
+.signup input{
+background: #fff none repeat scroll 0 0;
+border: 1px solid #fff;
+border-radius: 0 !important;
+box-shadow: none !important;
+color: #333;
+font-size: 14px !important;
+height: 45px;
+-webkit-transition: all 0.2s ease 0s;
+transition: all 0.2s ease 0s;
+}
+.signup input:hover,.signup input:focus{
+border: 1px solid #ccad52;
+}
+.btn-newsletter-bg{
+background: #fff none repeat scroll 0 0;
+border: 2px solid #fff;
+color: #333;
+margin-top: 15px;
+padding: 10px 30px;
+-webkit-transition: all 0.2s ease 0s;
+transition: all 0.2s ease 0s;
+}
+.btn-newsletter-bg:hover,.btn-newsletter-bg:focus{
+background: #ef476f none repeat scroll 0 0;
+border: 2px solid #fff;
+color: #fff;
+}
+/*
+* ----------------------------------------------------------------------------------------
+* 17.START FOOTER TOP DESIGN
+* ----------------------------------------------------------------------------------------
+*/
+/*
+* ----------------------------------------------------------------------------------------
+* 18.START FOOTER DESIGN
+* ----------------------------------------------------------------------------------------
+*/
+.footer {
+    background-color: #26547c  ;
+    padding: 20px 0;
+	border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+.footer_copyright {
+color: rgba(255, 255, 255, 0.9);
+font-size: 13px;
+margin: 0;
+padding-top: 15px;
+text-transform: uppercase;
+}
+/*START FOOTER SOCIAL*/
+ .footer_social {float: right;}
+.footer_social ul {
+    list-style: outside none none;
+    margin: 0;
+    padding: 0;
+}
+.footer_social ul li {
+    margin: 2px;
+    display: inline-block;
+}
+.footer_social ul li a {
+border: 1px solid rgba(255, 255, 255, 0.9);
+border-radius: 30px;
+color: #fff;
+display: block;
+font-size: 16px;
+height: 40px;
+line-height: 40px;
+text-align: center;
+transition: all 0.2s ease 0s;
+width: 40px;
+}
+.footer_social ul li a:hover {background:#fff; color: #ef476f ;border: 1px solid #fff;}
+.footer_social ul li a:hover i {
+    -webkit-animation: toLeftFromRight 0.4s forwards;
+    -moz-animation: toLeftFromRight 0.4s forwards;
+    animation: toLeftFromRight 0.4s forwards;
+}
+/*END FOOTER SOCIAL*/
+/*
+* ----------------------------------------------------------------------------------------
+* 18.END FOOTER DESIGN
+* ----------------------------------------------------------------------------------------
+*/
+
+/*START SINGLE PROJECT POPUP CSS*/
+.modalbg {
+    position: fixed;
+    font-family: Arial, Helvetica, sans-serif;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0);
+    z-index: 99999;
+    -webkit-transition: all 2s ease-out;
+    transition: all 2s ease-out;
+    -webkit-transition-delay: 0.2s;
+    -moz-transition-delay: 0.2s;
+    -o-transition-delay: 0.2s;
+    -transition-delay: 0.2s;
+    display: block;
+    pointer-events: none;
+}
+.modalbg .dialog {
+    background: rgba(0, 0, 0, 0) -webkit-linear-gradient(#fff, #ccc) repeat scroll 0 0;
+    background: rgba(0, 0, 0, 0) linear-gradient(#fff, #ccc) repeat scroll 0 0;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #000;
+    margin: 10% auto;
+    padding: 0;
+    position: relative;
+    top: -1000px;
+    width: 400px;
+}
+.modalbg .dialog .ie7 { filter: progid:DXImageTransform.Microsoft.Shadow(color='#000', Direction=135, Strength=3) }
+.modalbg:target {
+    display: block;
+    pointer-events: auto;
+    background: rgba(4, 10, 30, 0.8);
+    -webkit-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+}
+.modalbg:target .dialog {
+    top: -90px;
+    -webkit-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+    -webkit-transition-delay: 0.2s;
+    -moz-transition-delay: 0.2s;
+    -o-transition-delay: 0.2s;
+    -transition-delay: 0.2s;
+}
+.close {
+    background: #fff none repeat scroll 0 0;
+    color: #222 !important;
+    font-weight: bold;
+    height: 40px;
+    line-height: 40px;
+    position: absolute;
+    right: -40px;
+    text-align: center;
+    text-decoration: none;
+    top: 0;
+    -webkit-transition: all 0.2s ease-out 0.2s;
+            transition: all 0.2s ease-out 0.2s;
+    width: 40px;
+    opacity: 1;
+    filter: alpha(opacity=100);
+}
+.close .ie7 { filter: progid:DXImageTransform.Microsoft.Shadow(color='#000', Direction=135, Strength=3) }
+.close:hover {
+    background: #ef476f;
+    color: #fff!important;
+    opacity: 1;
+    filter: alpha(opacity=100);
+    -webkit-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+}
+/*END SINGLE PROJECT POPUP CSS*/
+
+/*
+* ----------------------------------------------------------------------------------------
+* .START LOGIN AND REGISTER PAGE DESIGN
+* ----------------------------------------------------------------------------------------
+*/
+.login_register_title{
+color: #555;
+letter-spacing: 1px;
+margin-bottom: 20px;
+margin-top: 0;
+text-align: center;
+text-transform: uppercase;
+}
+.login{
+background: #fff none repeat scroll 0 0;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.06);
+overflow: hidden;
+padding: 30px;
+}
+.register{
+background: #fff none repeat scroll 0 0;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.06);
+overflow: hidden;
+padding: 30px;
+}
+
+.login input {
+  background: #fff none repeat scroll 0 0;
+  border: 1px solid #eee;
+  border-radius: 0;
+  box-shadow: none;
+  color: #333;
+  height: 50px;
+  padding-left: 10px;
+  transition: all 0.2s ease 0s;
+}
+.login input:focus {
+    border-radius: 0;
+    box-shadow: none;
+    outline: 0 none;
+	border:1px solid #ef476f;
+}
+.register input {
+  background: #fff none repeat scroll 0 0;
+  border: 1px solid #eee;
+  border-radius: 0;
+  box-shadow: none;
+  color: #333;
+  height: 50px;
+  padding-left: 10px;
+  transition: all 0.2s ease 0s;
+}
+.register input:focus {
+    border-radius: 0;
+    box-shadow: none;
+    outline: 0 none;
+	border:1px solid #ef476f;
+}
+.btn-popup-bg{
+background: #f1f1f1 none repeat scroll 0 0;
+border: 2px solid #f1f1f1;
+color: #333;
+margin-top: 15px;
+padding: 10px 30px;
+-webkit-transition: all 0.2s ease 0s;
+transition: all 0.2s ease 0s;
+}
+.btn-popup-bg:hover,.btn-popup-bg:focus{
+background: #ef476f none repeat scroll 0 0;
+border: 2px solid #ef476f;
+color: #fff;
+}
+/*
+* ----------------------------------------------------------------------------------------
+* .END LOGIN AND REGISTER PAGE DESIGN
+* ----------------------------------------------------------------------------------------
+*/
+
+
+/*
+ * ----------------------------------------------------------------------------------------
+ * .START SECTION TOP DESIGN
+ * ----------------------------------------------------------------------------------------
+ */
+.section-top{
+background: #26547c  none repeat scroll 0 0;
+padding: 40px 0;
+}
+.section-top-title h2 {
+    color: #fff;
+    font-size: 40px;
+    margin: 0;
+    text-transform: capitalize;
+}
+.breadcrumb {
+  background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+  margin-bottom: 0;
+  float: right;
+}
+.breadcrumb li { color: #fff!important }
+.breadcrumb li a { color: #fff!important }
+.breadcrumb li a:hover { color: #fff!important }
+/*
+ * ----------------------------------------------------------------------------------------
+ * .END SECTION TOP DESIGN
+ * ----------------------------------------------------------------------------------------
+*/

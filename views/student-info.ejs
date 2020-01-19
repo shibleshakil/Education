@@ -1,0 +1,103 @@
+<!--Author: Shakil
+    Date: 13/11/2019
+-->
+
+<% include partials/header.ejs %>
+<section class="footer_contact_area section-padding">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="section-title text-center wow zoomIn">
+                <h2>Student's Information</h2>
+                <span></span>
+            </div>
+            <div class="col-md-8 col-md-offset-2 col-sm-12 col-xs-12">
+                <div class="footer_contact">
+                    <form action="/add-payment" method="post" enctype="multipart/form-data">
+                        <div class="row">
+                            <% info.forEach(function(item){ %>
+                            <div class="form-group col-md-12" style="width:70%">
+                                <h2>Basic Information:</h2>
+                                <div style="font-size: 16px;">
+                                    Name : <b> <%= item.StudentName %></b><br>
+                                    Phone :<b> <%= item.PhoneNumber %> </b><br>
+                                    Gender :<b> <%= item.Gender %></b><br>
+                                    <address>Address : <b> <%= item.Address %> </b></address>
+                                </div>
+                                <h2>Educational Information:</h2>
+                                <div style="font-size: 16px;">
+                                    Institute Name :<b> <%= item.InstitutionName %></b> <br>
+                                    Class:<b> <%= item.Class %></b><br>
+                                    Student Id:<b> <%= item.CochingId %></b><br>
+                                    Admission date : <b> <%= item.AdmissionDate %></b><br>
+                                    Tution Fee :<b> <%= item.MonthlyPayment %></b><br>
+                                </div>
+                                <br>
+                                <h2>Guardian's Information:</h2>
+                                <div style="font-size: 16px;">
+                                    Guardian Name : <b><%= item.GuardianName %></b><br>
+                                    Guardian's Occupation :<b> <%= item.GuardianOccupation %></b> <br>
+                                    Relation :<b> <%= item.Relation %></b> <br>
+                                    Guardian's phone : <b> <%= item.GuardianPhoneNumber %></b><br>
+                                    <Address>Guardian's Address : <b> <%= item.GuardianAddress %></b></Address>
+                                </div>
+                            </div>
+                            <div class="form-group col-md-12" style="width:30%; margin-top: 2%; padding: 0 10%;">
+                                <img src="/assets/img/<%= item.Image %>" style="width: 200px; height: 200px;">
+                            </div>
+                            <% }) %>
+                        </div>
+                    </form>
+                </div>
+            </div><!-- END COL -->
+        </div>
+        <!--- END ROW -->
+    </div>
+    <!--- END CONTAINER -->
+</section>
+
+<% include partials/footer.ejs %>
+
+<!-- Latest jQuery -->
+<script src="assets/js/jquery-1.12.4.min.js"></script>
+<!-- Latest compiled and minified Bootstrap -->
+<script src="assets/bootstrap/js/bootstrap.min.js"></script>
+<!-- countTo js -->
+<script src="assets/js/jquery.inview.min.js"></script>
+<!-- owl-carousel min js  -->
+<script src="assets/owlcarousel/js/owl.carousel.min.js"></script>
+<!-- magnific-popup js -->
+<script src="assets/js/jquery.magnific-popup.min.js"></script>
+<!-- jquery mixitup js -->
+<script src="assets/js/jquery.mixitup.min.js"></script>
+<!-- scrolltopcontrol js -->
+<script src="assets/js/scrolltopcontrol.js"></script>
+<!-- WOW - Reveal Animations When You Scroll -->
+<script src="assets/js/wow.min.js"></script>
+<!-- form-contact js -->
+<script src="assets/js/form-contact.js"></script>
+<!-- map js -->
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDwIQh7LGryQdDDi-A603lR8NqiF3R_ycA"></script>
+<!-- scripts js -->
+<script src="assets/js/scripts.js"></script>
+<script type="text/javascript">
+    /*START GOOGLE MAP*/
+    function initialize() {
+        var mapOptions = {
+            zoom: 15,
+            scrollwheel: false,
+            center: new google.maps.LatLng(40.7127837, -74.00594130000002)
+        };
+        var map = new google.maps.Map(document.getElementById('map'),
+            mapOptions);
+        var marker = new google.maps.Marker({
+            position: map.getCenter(),
+            icon: 'assets/img/map_pin.png',
+            map: map
+        });
+    }
+    google.maps.event.addDomListener(window, 'load', initialize);
+        /*END GOOGLE MAP*/
+</script>
+</body>
+
+</html>

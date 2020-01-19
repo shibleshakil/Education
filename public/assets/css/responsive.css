@@ -1,0 +1,126 @@
+
+/*TABLET DEVICE*/
+@media only screen and (max-width:768px) { 
+.top-info-left  ul li{margin-bottom: 20px;}
+.menu-top {margin-top: 110px;}
+.navbar-default .navbar-nav > li > a {
+margin-top: 10px;
+padding: 8px;
+}
+.hero-text h2 {
+font-size: 40px;
+line-height: 40px;
+}
+.single-slide-item h2 {
+font-size: 40px;
+line-height: 40px;
+}
+.about_content{margin-top: 30px;}
+.counter {margin-bottom: 20px;}
+.counter p { font-size: 13px }
+.portfolio-filters li { margin-bottom: 10px }
+.single_team {margin-bottom:40px}
+.single_event { margin-bottom: 100px }
+.single_event img{width:100%;}
+ .single_address { margin-bottom: 30px }
+ .single_address p { font-size: 15px }
+ .about_content {
+  margin-bottom: 30px;
+}
+.modalbg:target .dialog {top: 70px;}
+}
+
+
+
+
+/*MOBILE 480PX DEVICE*/
+@media only screen and (max-width:480px) { 
+.top-info-right ul { float: left }
+.menu-top {margin-top: 140px;}
+.menu-top { background-color: #fff }
+.navbar-default .navbar-nav > li > a { color: #313131  !important }
+.menu-top {
+color: #fff !important;
+margin-left: 0px;
+}
+.hero-text h2 {
+padding-top:0px;
+font-size: 30px;
+line-height: 40px;
+}
+.single-slide-item h2 {
+padding-top:0px;
+font-size: 30px;
+line-height: 40px;
+}	
+.single_promo h1 {
+  font-size: 34px;
+}
+.single_event {
+  margin-bottom: 30px;
+}
+.about-slide iframe {height: 280px;}
+.plan { margin-bottom: 30px }
+.single-blog { margin-bottom: 40px }
+.section-top-title h2 {text-align: center;}
+.breadcrumb {
+  background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+  float: none;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+.single_footer {margin-top: 30px;}
+.footer_copyright {text-align: center;}
+.footer_social {
+  float: none;
+  margin-top: 10px;
+  text-align: center;
+}
+.modalbg .dialog {width: 300px;}
+
+}
+
+
+/*MOBILE 480PX DEVICE*/
+@media only screen and (max-width:414px) { 
+.menu-top {margin-top: 190px;}
+
+}
+
+
+/*IPHONE 375PX DEVICE*/
+@media only screen and (max-width:375px) { 
+.menu-top {margin-top: 190px;}
+}
+
+
+
+
+/*MOBILE 360PX DEVICE*/
+@media only screen and (max-width:360px) { 
+
+.hero-text h2 {
+font-size: 26px;
+line-height: 34px;
+}
+.single-slide-item h2 {
+font-size: 26px;
+line-height: 34px;
+}
+.about-slide iframe {height: 240px;}
+.modalbg .dialog {width: 270px;}
+}
+
+
+/*MOBILE 360PX DEVICE*/
+@media only screen and (max-width:320px) { 
+.about-slide iframe {height: 200px;}
+.modalbg .dialog {width: 240px;}
+}
+
+
+
+
+
+

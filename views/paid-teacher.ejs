@@ -1,0 +1,92 @@
+<!-- 
+    Author: Raihan
+    Objective: Show list of the teacher who are paid
+-->
+
+<% include partials/header.ejs %>
+<section class="footer_contact_area section-padding">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="section-title text-center wow zoomIn">
+                <h2>Paid Teacher List</h2>
+                <span></span>
+            </div>
+
+            <div class="col-md-8 col-md-offset-2 col-sm-12 col-xs-12">
+                <!-- table for the for paid teacher list -->    
+                <table class="table table-bordered table-hover">
+                    <thead>
+                        <tr>
+                            <th scope="col">Teacher Id</th>
+                            <th scope="col">Name</th>
+                            <th scope="col">Profile</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <% info.forEach(function(item){ %>
+                        <tr>
+                            <td><%= item.CochingId %></td>
+                            <td><%= item.TeacherName %></td>
+                            <td><button type="button" class="btn  btn-contact-bg"><a href="/teacher-info/<%= item.TeacherID%>">View Profile</a></button></td>
+                        </tr>
+                        <% }) %>
+                    </tbody>
+                </table>
+                <!-- end of the table for paid teacher list -->
+                <button class="btn  btn-contact-bg" style="margin-left:44%;" type='button'> <a href="/saveExcel"> Download </a> </button>
+            </div>
+            <!-- END COL -->
+        </div>
+        <!--- END ROW -->
+    </div>
+    <!--- END CONTAINER -->
+</section>
+
+
+<% include partials/footer.ejs %>
+
+<!-- Latest jQuery -->
+<script src="assets/js/jquery-1.12.4.min.js"></script>
+<!-- Latest compiled and minified Bootstrap -->
+<script src="assets/bootstrap/js/bootstrap.min.js"></script>
+<!-- countTo js -->
+<script src="assets/js/jquery.inview.min.js"></script>
+<!-- owl-carousel min js  -->
+<script src="assets/owlcarousel/js/owl.carousel.min.js"></script>
+<!-- magnific-popup js -->
+<script src="assets/js/jquery.magnific-popup.min.js"></script>
+<!-- jquery mixitup js -->
+<script src="assets/js/jquery.mixitup.min.js"></script>
+<!-- scrolltopcontrol js -->
+<script src="assets/js/scrolltopcontrol.js"></script>
+<!-- WOW - Reveal Animations When You Scroll -->
+<script src="assets/js/wow.min.js"></script>
+<!-- form-contact js -->
+<script src="assets/js/form-contact.js"></script>
+<!-- map js -->
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDwIQh7LGryQdDDi-A603lR8NqiF3R_ycA"></script>
+<!-- scripts js -->
+<script src="assets/js/scripts.js"></script>
+<script type="text/javascript">
+    /*START GOOGLE MAP*/
+    function initialize() {
+        var mapOptions = {
+            zoom: 15,
+            scrollwheel: false,
+            center: new google.maps.LatLng(40.7127837, -74.00594130000002)
+        };
+        var map = new google.maps.Map(document.getElementById('map'),
+            mapOptions);
+        var marker = new google.maps.Marker({
+            position: map.getCenter(),
+            icon: 'assets/img/map_pin.png',
+            map: map
+        });
+    }
+    google.maps.event.addDomListener(window, 'load', initialize);
+        /*END GOOGLE MAP*/
+</script>
+</body>
+
+</html>

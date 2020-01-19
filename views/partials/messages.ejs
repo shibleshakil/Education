@@ -1,0 +1,12 @@
+<% if(typeof errors != 'undefined'){ %>
+    <% errors.forEach(function(error) { %>
+      
+      <div class="alert">
+          <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+          <%= error.msg %>
+      </div>
+      <p>.</p>
+
+    <% }); %>
+<% } %>
+    

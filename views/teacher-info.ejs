@@ -1,0 +1,56 @@
+
+<% include partials/header.ejs %>
+    <!-- end header-->
+
+    <!-- END NAVBAR -->
+    <section class="footer_contact_area section-padding">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="section-title text-center wow zoomIn">
+                    <h2>Teacher's Information</h2>
+                    <span></span>
+                </div>
+                <div class="col-md-8 col-md-offset-2 col-sm-12 col-xs-12">
+                    <div class="footer_contact">
+                        <form action="/teacher-info" method="post" enctype="multipart/form-data">
+                            <div class="row">
+                                <% info.forEach(function(item){ %>
+                                <div class="form-group col-md-12" style="width:70%">
+                                    <h2>Basic Information:</h2>
+                                    <div style="font-size: 16px;">
+                                        Name : <b> <%= item.TeacherName %></b><br>
+                                        Phone :<b> <%= item.PhoneNumber %> </b><br>
+                                        Email :<b> <%= item.Email %> </b><br>
+                                        Gender :<b> <%= item.Gender %></b><br>
+                                        <address>Address : <b> <%= item.Address %></b></address>
+                                    </div>
+                                    <h2>Educational Information:</h2>
+                                    <div style="font-size: 16px;">
+                                        University Name :<b> <%= item.UniversityName %></b> <br>
+                                        University Degree :<b><%= item.UniversityDegree %></b> <br>
+                                        College Name :<b> <%= item.CollegeName %></b> <br>
+                                        College Group :<b> <%= item.CollegeGroup %></b> <br>
+                                    </div>
+                                    <br>
+                                    <h2>Office Information:</h2>
+                                    <div style="font-size: 16px;">
+                                        Teacher Id : <b> <%= item.CochingId %></b><br>
+                                        Joining date : <b> <%= item.JoiningDate %></b><br>
+                                        Salary :<b> <%= item.Salary %> BDT</b><br>
+                                    </div>
+                                </div>
+                                <div class="form-group col-md-12" style="width:30%; margin-top: 2%; padding: 0 10%;">
+                                    <img src="/assets/img/<%= item.Image %>" style="width: 200px; height: 200px;">
+                                </div>
+                                <% }) %>
+                            </div>
+                        </form>
+                    </div>
+                </div><!-- END COL -->
+            </div>
+            <!--- END ROW -->
+        </div>
+        <!--- END CONTAINER -->
+    </section>
+
+    <% include partials/footer.ejs %>
