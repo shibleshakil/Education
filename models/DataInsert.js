@@ -23,7 +23,7 @@ DataInsert.prototype.saveStudentData = function () {
 
     file.mv(uploadpath, function (err) {
       if (err) {
-        this.errors.push({msg: "give a valid name"})
+        this.errors.push({msg: "give a valid image"})
         reject()
         return
       }
