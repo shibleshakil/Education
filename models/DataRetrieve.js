@@ -1,7 +1,3 @@
-/*
-    Author: Raihan
-    Objective: Retrieving the data for the function called in data controller
-*/
 
 const bcrypt = require("bcryptjs")
 const validator = require("validator")
